@@ -22,7 +22,6 @@ function init(){
 
 function buildMetadata(sample) {
     d3.json(url).then((data) => {
-        // var metadata=data.metadata;
         var metadata= data.metadata.filter(sampleobject =>
             sampleobject.id == sample);
 
@@ -82,8 +81,6 @@ function buildCharts(selectedSampleID) {
 
     d3.json(url).then((data) => {
       
-        // var samples= data.samples;
-
         var samples= data.samples.filter(sample => sample.id == selectedSampleID);
         
         console.log("loging samples");
