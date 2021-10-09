@@ -1,5 +1,5 @@
 
-let url = "../data/samples.json"
+let url = "data/samples.json"
 
 
 function init(){
